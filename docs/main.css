@@ -23,12 +23,28 @@ html {
   .nav--main {
     order: -1; }
 
+section {
+  background-color: orangered; }
+
 .header {
   height: 100vh;
-  position: relative; }
+  position: relative;
+  display: flex;
+  flex-direction: column; }
   .header__hero-image {
     height: 90%;
     background-image: url("img/header.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover; }
+
+.main-title {
+  background-color: #fff;
+  align-self: center;
+  height: 30%;
+  margin-top: -10rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
