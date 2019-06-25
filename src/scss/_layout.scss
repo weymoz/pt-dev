@@ -1,31 +1,20 @@
-.container {
-  max-width: 140rem;
+.landing-container {
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background-color: pink;
 }
 
 
-.nav {
-  display: none;
-  &--main {
-    order: -1;
-  }
-}
-
-section {
-  background-color: orangered;
-}
-
-.header {
-  height: 100vh;
+.landing-header {
   position: relative;
   display: flex;
   flex-direction: column;
 
   &__hero-image {
-    height: 90%;
+    height: 95vh;
+    margin-bottom: -80px;
+
     background-image: url("img/header.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -35,17 +24,61 @@ section {
 
 .main-title {
   background-color: #fff;
+
   align-self: center; 
-  height: 30%;
-  margin-top: -10rem;
-  width: 50%;
+  width: 65%;
+  padding: 2rem;
+
+  position: relative;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
+  text-transform: uppercase;
 
+  &__primary {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: .1rem;
+    word-spacing: 1rem;
+    margin-top: 4rem;
+  }
 
+  &__secondary {
+    margin-top: 2.5rem;
+    font: serif;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3.5rem;
+  }
+}
+
+.round-button {
+  background-color: white;
+
+  //Centering
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%,-50%);
+
+  border-radius: 50rem;
+
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: red;
+    margin-left: .2rem;
+  }
 }
 
 
