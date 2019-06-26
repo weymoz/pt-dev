@@ -53,7 +53,7 @@ function watchHtml(cb) {
 //}
 
 function styles() {
-  return src("src/scss/**/*.*")
+  return src("src/scss/*.*")
     .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([
@@ -67,12 +67,12 @@ function styles() {
 }
 
 function watchStyles(cb) {
-  watch("src/scss/**/*.*", styles);
+  watch("src/scss/*.*", styles);
   cb();
 }
 
 function images() {
-  return src("src/img/*.*", {base: "src"})
+  return src("src/img/**/*.*", {base: "src"})
     .pipe(imagemin(imagemin.jpegtran({progressive: true})))
     .pipe(dest("docs"))
     .pipe(dest("peopletalk"));
