@@ -1,0 +1,147 @@
+$large: 24%;
+$small: 16%;
+$margin-hor: 3%;
+
+.collage {
+
+  height: 700px;
+  position: relative;
+  
+  &__figure {
+    width: $small;
+    display: block;
+    text-align: center;
+    position: absolute;
+
+    &--1 {
+      width: $large;
+      top: -15%; 
+      left: $margin-hor;
+    }
+
+    &--2 {
+      width: $large;
+      bottom: 15%; 
+      left: $margin-hor;
+    }
+
+    &--3 {
+      top: -8%; 
+      left: 35%;
+    }
+
+    &--4 {
+      width: $large;
+      top: 20%; 
+      left: 43%;
+    }
+
+    &--5 {
+      bottom: 5%; 
+      left: 35%;
+    }
+
+    &--6 {
+      left: 80%; 
+      top: 6%;
+    }
+
+    &--7 {
+      width: $large;
+      left: 72%; 
+      bottom: 10%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+
+  &__caption {
+    text-align: center;
+    padding: .9rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: .8rem;
+    font-weight: bold;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  .collage {
+    height: auto; 
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    
+    &__figure {
+      width: $small;
+      display: block;
+      text-align: center;
+      position: static;
+  
+      &--1 {
+        display: none;
+      }
+  
+      &--2 {
+        display: none;
+      }
+  
+      &--3 {
+        display: none;
+      }
+  
+      &--4 {
+        display: none;
+      }
+  
+      &--5 {
+        width: 45%;
+        align-self: flex-end;
+        margin-right: 2%;
+      }
+  
+      &--6 {
+        display: none;
+      }
+  
+      &--7 {
+        width: 65%;
+        margin-left: 2%;
+      }
+    }
+  
+    &__image {
+      width: 100%;
+    }
+  
+  
+    &__caption {
+      text-align: center;
+      padding: .9rem;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      font-size: .8rem;
+      font-weight: bold;
+    }
+  
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
