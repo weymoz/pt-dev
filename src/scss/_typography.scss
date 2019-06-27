@@ -119,6 +119,25 @@
   }
 }
 
+.section-4 {
+  .section-title {
+    width: 50%; 
+    &__primary {
+      align-items: flex-end;
+      margin-left: -10rem;
+    }
+
+    &__number {
+      margin-bottom: auto;
+    }
+
+    &__secondary {
+      text-align: left;
+      padding-left: 2rem;
+    }
+
+  }
+}
 @media screen and (max-width: 992px) {
 
   .section-title {
@@ -156,11 +175,28 @@
     }
   }
 
-  .section-3 {
-    .section-title {
 
+
+.section-4 {
+  .section-title {
+    width: auto; 
+
+    &__primary {
+      align-items: flex-end;
+      margin-left: 4rem;
     }
+
+    &__number {
+      margin-bottom: auto;
+    }
+
+    &__secondary {
+      text-align: left;
+      padding-left: 2rem;
+    }
+
   }
+}
 }
 
 

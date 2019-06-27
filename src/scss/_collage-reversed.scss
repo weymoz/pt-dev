@@ -132,6 +132,49 @@ $margin-hor: 3%;
     }
   
   }
+
+  .section-4 {
+
+  .collage-rev {
+    
+    &__figure {
+  
+      &--1 {
+        display: none;
+      }
+  
+      &--2 {
+        display: none;
+      }
+  
+      &--3 {
+        width: 65%;
+        margin-left: 2%;
+      }
+  
+      &--4 {
+        display: none;
+      }
+  
+      &--5 {
+        width: 45%;
+        align-self: flex-end;
+        margin-right: 2%;
+        display: block;
+      }
+  
+      &--6 {
+        display: none;
+      }
+  
+      &--7 {
+        display: none;
+      }
+    }
+  
+  
+  }
+  }
 }
 
 
