@@ -138,6 +138,22 @@
 
   }
 }
+
+.section-5 {
+  .section-title {
+    align-items: flex-end;
+
+    &__primary {
+      align-items: flex-end;
+      margin-right: -5%;
+      width: 60%;
+    }
+
+    &__secondary {
+      text-align: right;
+    }
+  }
+}
 @media screen and (max-width: 992px) {
 
   .section-title {
@@ -197,6 +213,21 @@
 
   }
 }
+
+
+.section-5 {
+  .section-title {
+
+    &__primary {
+      width: 100%;
+    }
+
+    &__secondary {
+    }
+  }
+}
+
+
 }
 
 
