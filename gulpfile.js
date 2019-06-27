@@ -28,6 +28,7 @@ function html() {
   return src([
     './src/header.html', 
     './src/content.html', 
+    './src/form.html', 
     './src/footer.html'])
     .pipe(concat('index.html'))
     .pipe(dest('docs'))
@@ -58,7 +59,7 @@ function styles() {
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([
       autoprefixer(),
-      cssnano()
+      //      cssnano()
     ]))
     .pipe(sourcemaps.write())
     .pipe(dest("docs"))

@@ -1,20 +1,19 @@
 <div class="landing-container">
-  <div class="landing-header">
+  <div class="landing-hero">
 
-    <div class="hero-picture">
-    </div>
+    <div class="landing-hero__picture"></div>
 
-    <div class="main-title">
+    <div class="landing-hero__text">
 
-      <div class="round-button">
-        <svg class="round-button__icon">
+      <div class="landing-hero__button landing-round-button">
+        <svg class="landing-round-button__icon">
           <use xlink:href="img/sprite.svg#icon-play"></use>
         </svg>
       </div>
 
-      <h1 class="main-title__primary">Все о моде этим летом:</h1>
+      <h1 class="landing-hero__primary-message landing-main-title">Все о моде этим летом:</h1>
 
-      <p class="main-title__secondary">
+      <p class="landing-hero__secondary-message landing-sub-title">
       Что носить,<br> 
       где купить и с кого взять пример?
       </p>
@@ -24,25 +23,27 @@
   </div> <!-- landing header end -->
 
 
-  <section class="landing-section">
+  <section class="landing-section landing-section-1 section-1">
 
-    <div class="section-picture">
-      <div class="section-picture__bg-wrapper">
-        <img class="section-picture__bg-image" src="img/bg.jpg" alt="">
+    <div class="landing-section-1__picture">
+      <div class="landing-section-1__bg-wrapper">
+        <img class="landing-section-1__bg-image" src="img/bg.jpg" alt="">
       </div>
-      <div class="section-picture__image-wrapper">
-        <img class="section-picture__image" src="img/01-trends/main.jpg" alt="">
+      <div class="landing-section-1__image-wrapper">
+        <img class="landing-section-1__image" src="img/01-trends/main.jpg" alt="">
       </div>
     </div>
 
-    <div class="section-text">
-      <h2 class="section-text__title">
-        <span class="section-text__number">
+    <div class="section-title">
+      <h2 class="section-title__primary">
+        <div class="section-title__number">
           01.
-        </span>
+        </div>
+        <div class="section-title__text">
          Тренды
+        </div>
       </h2>  
-      <p class="section-text__info">
+      <p class="section-title__secondary">
         lorem ipsum dolor sit amet dfsdff wellno kj oiuytvc.
       </p>
     </div>
@@ -94,11 +95,11 @@
       </figure>
     
       <figure class="collage__figure collage__figure--6">
-        <figcaption class="collage__caption">Белый</figcaption>
         <img 
           class="collage__image" 
           src="img/01-trends/Белый.jpg" 
           alt="category image">
+        <figcaption class="collage__caption">Белый</figcaption>
       </figure>
 
       <figure class="collage__figure collage__figure--7">
@@ -110,30 +111,104 @@
       </figure>
     
   </section>
+  
+  <section class="landing-button">
+    <a class="landing-button__button" href="#">Далее</a>
+  </section>
 
 
-  <section class="landing-section--rev">
 
-    <div class="section-picture">
-      <div class="section-picture__bg-wrapper">
-        <img class="section-picture__bg-image" src="img/bg.jpg" alt="">
+  <section class="landing-section landing-section-2 section-2">
+
+    <div class="landing-section-2__picture">
+      <div class="landing-section-2__bg-wrapper">
+        <img class="landing-section-2__bg-image" src="img/bg.jpg" alt="">
       </div>
-      <div class="section-picture__image-wrapper">
-        <img class="section-picture__image" src="img/02/main.jpg" alt="">
+      <div class="landing-section-2__image-wrapper">
+        <img class="landing-section-2__image" src="img/02/main.jpg" alt="">
       </div>
     </div>
 
-    <div class="section-text">
-      <h2 class="section-text__title">
-        <span class="section-text__number">
+    <div class="section-title">
+      <h2 class="section-title__primary">
+        <div class="section-title__number">
           02.
-        </span>
+        </div>
+        <div class="section-title__text">
          Главные предметы гардероба
+        </div>
       </h2>  
-      <p class="section-text__info">
+      <p class="section-title__secondary">
         lorem ipsum dolor sit amet dfsdff wellno kj oiuytvc.
       </p>
     </div>
   
   </section>
+
+
+  <section class="collage-rev">
+    
+      <figure class="collage-rev__figure collage-rev__figure--1">
+        <img 
+          class="collage-rev__image" 
+          src="img/02/Рубашка с коротким рукавом.png" 
+          alt="category image">
+        <figcaption class="collage-rev__caption">Рубашка с коротким рукавом</figcaption>
+      </figure>
+
+      <figure class="collage-rev__figure collage-rev__figure--2">
+        <img 
+          class="collage-rev__image" 
+          src="img/02/Платье с цветочным принтом.png" 
+          alt="category image">
+        <figcaption class="collage-rev__caption">Платье с цветочным принтом</figcaption>
+      </figure>
+
+      <figure class="collage-rev__figure collage-rev__figure--3">
+        <img 
+          class="collage-rev__image" 
+          src="img/02/Костюм с шортами.jpg" 
+          alt="category image">
+        <figcaption class="collage-rev__caption">Костюм с шортами</figcaption>
+      </figure>
+
+      <figure class="collage-rev__figure collage-rev__figure--4">
+        <img 
+          class="collage-rev__image" 
+          src="img/02/Шорты.jpg" 
+          alt="category image">
+        <figcaption class="collage-rev__caption">Велосипедки и шорты</figcaption>
+      </figure>
+
+      <figure class="collage-rev__figure collage-rev__figure--5">
+        <img 
+          class="collage-rev__image" 
+          src="img/02/Легкий пиджак.jpg" 
+          alt="category image">
+        <figcaption class="collage-rev__caption">Легкий пиджак</figcaption>
+      </figure>
+    
+      <figure class="collage-rev__figure collage-rev__figure--6">
+        <figcaption class="collage-rev__caption">Трикотажный топ</figcaption>
+        <img 
+          class="collage-rev__image" 
+          src="img/02/Трикотажный топ (американка).png" 
+          alt="category image">
+      </figure>
+
+      <figure class="collage-rev__figure collage-rev__figure--7">
+        <figcaption class="collage-rev__caption">Широкие брюки и джинсы из 90х</figcaption>
+        <img 
+          class="collage-rev__image" 
+          src="img/02/Длинные брюки-клеш (широкие брюки).jpg" 
+          alt="category image">
+      </figure>
+    
+  </section>
+  
+  <section class="landing-button">
+    <a class="landing-button__button" href="#">Далее</a>
+  </section>
+
+
 </div>

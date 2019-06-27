@@ -1,0 +1,56 @@
+.landing-round-button {
+  background-color: white;
+
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 2000px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: red;
+    margin-left: .2rem;
+  }
+}
+
+
+
+.landing-button {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+
+  .landing-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  
+    &__button {
+      display: block;
+      background-color: red;
+      width: 10rem;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  
+    &__button:hover,
+    &__button:active {
+      background-color: darken(red, 5%);
+    }
+  }
+}
+

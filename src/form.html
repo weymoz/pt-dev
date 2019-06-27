@@ -1,0 +1,23 @@
+  <form class="form subscribe-popup__input-form subscribe-popup__input-form--bottom  js__subscribe">
+
+    <h4 class="subscribe-popup__subtitle subscribe-popup__subtitle--bottom">Подпишись на рассылку</h4>
+    <p class="subscribe-popup__subtitle-text ">И получай подборку самых интересных новостей из жизни звезд</p>
+
+    <div class="subscribe-popup__fieldset-wrapper">
+      <fieldset class="form__fieldset">
+        <label><input class="subscribe__field" type="text" placeholder="email адрес" name="email-subscribe"></label>
+        <div class="form__fieldset-terms js-terms">
+          <input id="input-popup-terms-1" class="js-termsInput" type="checkbox">
+          <label for="input-popup-terms-1">Я принимаю</label>
+          <a href="https://peopletalk.ru/files_new/privacy.pdf" target="_blank">пользовательское соглашение</a>
+        </div>
+        <div class="tooltip">
+          <div class="tooltip-arrow"></div>
+          <div class="tooltip-inner">Подтверди согласие</div>
+        </div>
+      </fieldset>
+      <input type="hidden" name="action" value="add_subscriber">
+      <input type="hidden" id="_wpnonce" name="_wpnonce" value="5d65163421"><input type="hidden" name="_wp_http_referer" value="/">
+      <button class="button js__subscribe--send" type="submit">ПОДПИСАТЬСЯ</button>
+    </div>
+  </form>

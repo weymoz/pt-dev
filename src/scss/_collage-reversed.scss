@@ -2,7 +2,7 @@ $large: 24%;
 $small: 16%;
 $margin-hor: 3%;
 
-.collage {
+.collage-rev {
 
   height: 700px;
   position: relative;
@@ -14,42 +14,42 @@ $margin-hor: 3%;
     position: absolute;
 
     &--1 {
-      width: $large;
-      top: -15%; 
+      top: 6%;
       left: $margin-hor;
     }
 
     &--2 {
       width: $large;
-      bottom: 15%; 
+      bottom: 10%; 
       left: $margin-hor;
     }
 
     &--3 {
-      top: -8%; 
-      left: 35%;
+      width: $large - 3%;
+      top: 28%; 
+      left: 33%;
     }
 
     &--4 {
-      width: $large;
-      top: 20%; 
-      left: 43%;
+      top: -2%; 
+      left: 50%;
     }
 
     &--5 {
       bottom: 5%; 
-      left: 35%;
+      left: 50%;
     }
 
     &--6 {
-      left: 80%; 
-      top: 6%;
+      width: $large;
+      left: 72%; 
+      top: -13%;
     }
 
     &--7 {
       width: $large;
       left: 72%; 
-      bottom: 10%;
+      bottom: 15%;
     }
   }
 
@@ -71,11 +71,11 @@ $margin-hor: 3%;
 
 @media screen and (max-width: 992px) {
 
-  .collage {
+  .collage-rev {
     height: auto; 
     position: relative;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-start;
     margin-top: 10%;
     
@@ -94,7 +94,8 @@ $margin-hor: 3%;
       }
   
       &--3 {
-        display: none;
+        width: 65%;
+        margin-left: 2%;
       }
   
       &--4 {
@@ -102,18 +103,17 @@ $margin-hor: 3%;
       }
   
       &--5 {
+        display: none;
+      }
+  
+      &--6 {
         width: 45%;
         align-self: flex-end;
         margin-right: 2%;
       }
   
-      &--6 {
-        display: none;
-      }
-  
       &--7 {
-        width: 65%;
-        margin-left: 2%;
+        display: none;
       }
     }
   

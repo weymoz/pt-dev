@@ -7,30 +7,30 @@
   .section-text {
     flex: 1;
     text-align: left;
-    margin-top: 6%;
+    margin-top: 8%;
   
     &__title {
-      margin-left: -21%;
-      margin-bottom: 10%;
-      font-size: 2.5rem;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      font-style: italic;
-      text-transform: uppercase;
+      display: flex;
+      margin-left: -6rem;
     }
+
   
     &__number {
       font-family: 'Oswald', sans-serif;
       font-weight: 900;
       font-style: normal;
-      font-size: 4.5rem;
+      font-size: 5rem;
+      margin-top: -2rem;
+      margin-right: 1rem;
     }
   
-    &__info {
-      padding-right: 20%;
-      padding-left: 1rem;
-      font-size: 1.1rem;
-      line-height: 2.5rem;
+    &__name {
+      font-size: 2.3rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      text-transform: uppercase;
+      line-height: 3rem;
     }
   }
   
@@ -74,12 +74,11 @@
       &__title {
         margin-right: auto;
         margin-left: 10%;
-        margin-bottom: -2.7rem;
         font-size: 3rem;
       }
     
       &__number {
-        font-size: 5.5rem;
+        font-size: 7rem;
       }
     
       &__info {
