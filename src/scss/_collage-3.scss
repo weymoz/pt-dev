@@ -1,8 +1,4 @@
-$large: 24%;
-$small: 16%;
-$margin-hor: 3%;
-
-.collage {
+.collage-3 {
 
   height: 700px;
   position: relative;
@@ -71,13 +67,14 @@ $margin-hor: 3%;
 
 @media screen and (max-width: 992px) {
 
-  .collage {
+  .collage-3 {
     height: auto; 
     position: relative;
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
     margin-top: 10%;
+    background-color: pink;
     
     &__figure {
       width: $small;
@@ -86,7 +83,9 @@ $margin-hor: 3%;
       position: static;
   
       &--1 {
-        display: none;
+        width: 45%;
+        align-self: flex-end;
+        margin-right: 2%;
       }
   
       &--2 {
@@ -102,9 +101,7 @@ $margin-hor: 3%;
       }
   
       &--5 {
-        width: 45%;
-        align-self: flex-end;
-        margin-right: 2%;
+        display: none;
       }
   
       &--6 {
@@ -133,72 +130,6 @@ $margin-hor: 3%;
   
   }
 
-  .section-3 {
-    .collage {
-      flex-direction: column;
-
-    &__figure {
-      width: $small;
-      display: block;
-      text-align: center;
-      position: static;
-  
-      &--1 {
-        width: 65%;
-        margin-left: 2%;
-      }
-  
-      &--2 {
-        display: none;
-      }
-  
-      &--3 {
-        display: none;
-      }
-  
-      &--4 {
-        display: none;
-      }
-  
-      &--5 {
-        display: none;
-      }
-  
-      &--6 {
-        width: 35%;
-        align-self: flex-end;
-        margin-right: 2%;
-      }
-  
-      &--7 {
-        display: none;
-      }
-    }
-    }
-  }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
