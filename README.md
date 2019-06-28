@@ -17,10 +17,12 @@ Demo: https://weymoz.github.io/pt-dev/
 
 Если надо запустить проект для разработки:
 
+```bash
 git clone https://github.com/weymoz/pt-dev.git
 cd pt-dev
 npm install
 gulp dev
+```
 
 поднимется сервер для разработки, 
 в папке /src все исходники
