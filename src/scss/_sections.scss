@@ -4,13 +4,23 @@ $offsetY: 9%;
 .landing-section {
   display: flex;
   margin-bottom: 1rem;
+
+  &__text {
+    flex: 1 0 auto;
+    width: 35%;
+    display: flex;
+    position: relative;
+  }
+
+  &__picture {
+    flex: 1 0 auto;
+  }
 }
 
-.landing-section-1 {
+.section-type-1 {
   flex-direction: row-reverse;
 
   &__picture {
-    flex: 1.6;
     display: flex;
     align-items: flex-start;
     flex-direction: row-reverse;
@@ -37,13 +47,10 @@ $offsetY: 9%;
 }
 
 
-.landing-section-2 {
-  display: flex;
+.section-type-2 {
   flex-direction: row;
-  margin-bottom: 1rem;
 
   &__picture {
-    flex: 1.6;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
@@ -76,7 +83,7 @@ $offsetY: 9%;
     flex-direction: column-reverse;
   }
 
-  .landing-section-2 {
+  .section-type-2 {
     &__picture {
       flex-direction: row-reverse; 
     } 
