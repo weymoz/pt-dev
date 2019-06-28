@@ -1,8 +1,1 @@
-<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs>
-<symbol id="icon-play" viewBox="0 0 24 24">
-<title>play</title>
-<path d="M5.541 2.159c-0.153-0.1-0.34-0.159-0.541-0.159-0.552 0-1 0.448-1 1v18c-0.001 0.182 0.050 0.372 0.159 0.541 0.299 0.465 0.917 0.599 1.382 0.3l14-9c0.114-0.072 0.219-0.174 0.3-0.3 0.299-0.465 0.164-1.083-0.3-1.382zM6 4.832l11.151 7.168-11.151 7.168z"></path>
-</symbol>
-</defs>
-</svg>
+<svg aria-hidden="true" style="position:absolute;width:0;height:0" xmlns="http://www.w3.org/2000/svg" overflow="hidden"><defs><symbol id="icon-play" viewBox="0 0 24 24"><path d="M5.541 2.159A1 1 0 0 0 4 3v18a1 1 0 0 0 1.541.841l14-9a1 1 0 0 0 0-1.682zM6 4.832L17.151 12 6 19.168z"/></symbol></defs></svg>

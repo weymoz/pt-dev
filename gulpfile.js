@@ -9,6 +9,7 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const sass = require("gulp-sass");
 const imagemin = require('gulp-imagemin');
+const imageminMozjpeg = require('imagemin-mozjpeg');
 sass.compiler = require("node-sass");
 
 
@@ -41,25 +42,13 @@ function watchHtml(cb) {
 }
 
 
-//function html() {
-//  return src(['./src/index.html'])
-//    .pipe(dest('docs'))
-//    .pipe(dest('peopletalk'));
-//}
-
-
-//function watchHtml(cb) {
-//  watch('src/index.html', html);
-//  cb();
-//}
-
 function styles() {
   return src("src/scss/*.*")
     .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([
       autoprefixer(),
-      //      cssnano()
+      cssnano()
     ]))
     .pipe(sourcemaps.write())
     .pipe(dest("docs"))
@@ -72,9 +61,28 @@ function watchStyles(cb) {
   cb();
 }
 
+function optimizeImages() {
+  return src("src/img/**/*.*", {base: "src"})
+    .pipe(imagemin([
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 5}),
+      imagemin.svgo({
+        plugins: [
+          {removeViewBox: true},
+          {cleanupIDs: false}
+        ]
+      }),
+    ], {verbose: true}))
+    .pipe(imagemin(imageminMozjpeg({quality: 50})))
+    .pipe(dest("docs"))
+    .pipe(dest("peopletalk"));
+}
+
+
+
 function images() {
   return src("src/img/**/*.*", {base: "src"})
-    .pipe(imagemin(imagemin.jpegtran({progressive: true})))
+    .pipe(imagemin(imagemin.jpegtran()))
     .pipe(dest("docs"))
     .pipe(dest("peopletalk"));
 }
@@ -91,7 +99,7 @@ function copyServer() {
 }
 
 function deploy(cb) {
-  
+
   exec("./deploy.sh", (err, stdout, stderr) => {
     console.log(stdout);
     console.log(stderr);
@@ -109,6 +117,9 @@ function clean() {
 }
 
 exports.dev = 
-    series(clean, styles, html, images, copyServer, deploy,  
+  series(clean, styles, html, images, copyServer, deploy,  
     parallel(watchStyles, watchHtml, watchImages, serve, watchDeploy)
   );
+
+exports.dist = 
+  series(clean, styles, html, optimizeImages, copyServer, deploy, parallel(serve));

@@ -17,7 +17,7 @@
 }
 
 .landing-sub-title {
-  font-family: serif;
+  font-family: 'Lora', serif;
   font-size: 2em;
   text-align: center;
   line-height: 1.5em;
@@ -47,6 +47,7 @@
   }
 
   &__secondary {
+    font-family: 'Lora', serif;
     padding: 2em 1em;
     //width: 60%;    
     font-size: 1.4em;
@@ -396,16 +397,13 @@
 
 
 
-
-
-
 .collage,
 .collage-rev {
   &__caption {
     text-align: center;
     padding: .8em;
     text-transform: uppercase;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     font-weight: bold;
   }
@@ -417,10 +415,7 @@
     &__caption {
       text-align: left;
       padding: .8em 0;
-      text-transform: uppercase;
-      font-family: sans-serif;
       font-size: 1.5em;
-      font-weight: bold;
     }
   }
 }

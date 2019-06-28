@@ -1,6 +1,6 @@
-$large: 24%;
-$small: 16%;
-$margin-hor: 3%;
+$large: 25em;
+$small: 14em;
+$margin-hor: 3em;
 
 .collage-rev {
 
@@ -25,7 +25,7 @@ $margin-hor: 3%;
     }
 
     &--3 {
-      width: $large - 3%;
+      width: $large - 3em;
       top: 28%; 
       left: 33%;
     }
@@ -58,6 +58,61 @@ $margin-hor: 3%;
   }
 
 }
+
+@media screen and (max-width: 870px) {
+
+.collage-rev {
+
+  &__figure {
+
+    &--1 {
+      top: 6%;
+      left: $margin-hor;
+    }
+
+    &--2 {
+      width: $large - 4em;
+      bottom: 10%; 
+      left: $margin-hor;
+    }
+
+    &--3 {
+      width: $large - 4em;
+      top: 28%; 
+      left: 38%;
+    }
+
+    &--4 {
+      top: -2%; 
+      left: 42%;
+    }
+
+    &--5 {
+      bottom: 5%; 
+      left: 50%;
+    }
+
+    &--6 {
+      width: $large - 4em;
+      left: 72%; 
+      top: -13%;
+    }
+
+    &--7 {
+      width: $large - 4em;
+      left: 72%; 
+      bottom: 15%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+}
+}
+
+
 
 @media screen and (max-width: $medium) {
 

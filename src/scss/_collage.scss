@@ -1,6 +1,6 @@
-$large: 24%;
-$small: 16%;
-$margin-hor: 3%;
+$large: 25em;
+$small: 14em;
+$margin-hor: 3em;
 
 .collage {
 
@@ -56,6 +56,61 @@ $margin-hor: 3%;
   &__image {
     width: 100%;
   }
+
+}
+
+
+@media screen and (max-width: 870px) {
+.collage {
+
+
+  &__figure {
+
+    &--1 {
+      width: $large - 4em;
+      top: -15%; 
+      left: $margin-hor;
+    }
+
+    &--2 {
+      width: $large - 2em;
+      bottom: 15%; 
+      left: $margin-hor;
+    }
+
+    &--3 {
+      top: -8%; 
+      left: 35%;
+    }
+
+    &--4 {
+      width: $large - 4em;
+      top: 20%; 
+      left: 43%;
+    }
+
+    &--5 {
+      bottom: 5%; 
+      left: 40%;
+    }
+
+    &--6 {
+      left: 80%; 
+      top: 6%;
+    }
+
+    &--7 {
+      width: $large - 4em;
+      left: 72%; 
+      bottom: 10%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+}
 
 }
 
