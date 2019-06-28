@@ -197,6 +197,25 @@
   }
 
 
+  .section-3 {
+    .section-title {
+  
+      &__primary {
+        margin-bottom: .1em;
+      }
+  
+      &__secondary {
+      }
+
+      &__number {
+        padding-right: 0;
+      }
+
+      &__text {
+        letter-spacing: .1em;
+      }
+    }
+  }
 
   .section-4 {
     .section-title {
