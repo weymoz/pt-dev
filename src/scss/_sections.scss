@@ -78,7 +78,7 @@ $offsetY: 9%;
 
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: $medium) {
   .landing-section {
     flex-direction: column-reverse;
   }

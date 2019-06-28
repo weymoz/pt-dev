@@ -60,16 +60,16 @@ $margin-hor: 3%;
 
   &__caption {
     text-align: center;
-    padding: .9rem;
+    padding: .9em;
     text-transform: uppercase;
     font-family: sans-serif;
-    font-size: 1rem;
+    font-size: 1.5em;
     font-weight: bold;
   }
 
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: $medium) {
 
   .collage-rev {
     height: auto; 
@@ -124,10 +124,10 @@ $margin-hor: 3%;
   
     &__caption {
       text-align: left;
-      padding: .9rem 0;
+      padding: .9em 0;
       text-transform: uppercase;
       font-family: 'Roboto', sans-serif;
-      font-size: 1.3rem;
+      font-size: 1.3em;
       font-weight: bold;
     }
   

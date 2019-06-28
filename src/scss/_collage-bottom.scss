@@ -68,7 +68,7 @@
 
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: $medium) {
 
   .section-5 {
 
@@ -136,7 +136,7 @@
 
   }
 
-  .section-3 {
+  .section-5 {
     .collage {
       flex-direction: column;
 

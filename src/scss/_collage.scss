@@ -6,7 +6,7 @@ $margin-hor: 3%;
 
   height: 700px;
   position: relative;
-  
+
   &__figure {
     width: $small;
     display: block;
@@ -60,16 +60,16 @@ $margin-hor: 3%;
 
   &__caption {
     text-align: center;
-    padding: .9rem;
+    padding: .8em;
     text-transform: uppercase;
     font-family: sans-serif;
-    font-size: 1rem;
+    font-size: 1.5em;
     font-weight: bold;
   }
 
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: $medium) {
 
   .collage {
     height: auto; 
@@ -78,50 +78,50 @@ $margin-hor: 3%;
     flex-direction: column-reverse;
     align-items: flex-start;
     margin-top: 10%;
-    
+
     &__figure {
       width: $small;
       display: block;
       text-align: center;
       position: static;
-  
+
       &--1 {
         display: none;
       }
-  
+
       &--2 {
         display: none;
       }
-  
+
       &--3 {
         display: none;
       }
-  
+
       &--4 {
         display: none;
       }
-  
+
       &--5 {
         width: 45%;
         align-self: flex-end;
         margin-right: 2%;
       }
-  
+
       &--6 {
         display: none;
       }
-  
+
       &--7 {
         width: 65%;
         margin-left: 2%;
       }
     }
-  
+
     &__image {
       width: 100%;
     }
-  
-  
+
+
     &__caption {
       text-align: left;
       padding: .9rem 0;
@@ -130,50 +130,50 @@ $margin-hor: 3%;
       font-size: 1.3rem;
       font-weight: bold;
     }
-  
+
   }
 
   .section-3 {
     .collage {
       flex-direction: column;
 
-    &__figure {
-      width: $small;
-      display: block;
-      text-align: center;
-      position: static;
-  
-      &--1 {
-        width: 65%;
-        margin-left: 2%;
+      &__figure {
+        width: $small;
+        display: block;
+        text-align: center;
+        position: static;
+
+        &--1 {
+          width: 65%;
+          margin-left: 2%;
+        }
+
+        &--2 {
+          display: none;
+        }
+
+        &--3 {
+          display: none;
+        }
+
+        &--4 {
+          display: none;
+        }
+
+        &--5 {
+          display: none;
+        }
+
+        &--6 {
+          width: 45%;
+          align-self: flex-end;
+          margin-right: 2%;
+        }
+
+        &--7 {
+          display: none;
+        }
       }
-  
-      &--2 {
-        display: none;
-      }
-  
-      &--3 {
-        display: none;
-      }
-  
-      &--4 {
-        display: none;
-      }
-  
-      &--5 {
-        display: none;
-      }
-  
-      &--6 {
-        width: 45%;
-        align-self: flex-end;
-        margin-right: 2%;
-      }
-  
-      &--7 {
-        display: none;
-      }
-    }
     }
   }
 
