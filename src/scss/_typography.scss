@@ -1,33 +1,34 @@
 .landing-main-title {
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 900;
-  letter-spacing: .1rem;
-  word-spacing: 1rem;
+  letter-spacing: .1em;
+  word-spacing: .2em;
+  line-height: 1.5em;
   color: black;
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
   .landing-main-title {
-    font-size: 2rem;
+    font-size: 2.5em;
   }
 }
 
 .landing-sub-title {
   font-family: serif;
-  font-size: 2rem;
+  font-size: 2em;
   text-align: center;
-  line-height: 3rem;
+  line-height: 1.5em;
   color: black;
   text-transform: uppercase;
 }
 
 @media screen and (max-width: 500px) {
   .landing-sub-title {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.5em;
+    line-height: 2em;
   }
 }
 
@@ -56,7 +57,7 @@
   &__number {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    font-size: 8rem;
+    font-size: 7em;
     padding-right: 1rem;
   }
 
