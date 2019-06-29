@@ -2,7 +2,8 @@ tar czf peopletalk.tar.gz peopletalk/index.html \
   peopletalk/index.js \
   peopletalk/main.css \
   peopletalk/package.json \
-  peopletalk/img
+  peopletalk/img \
+  peopletalk/js
 
 scp peopletalk.tar.gz hetz:~
 rm -rf peopletalk.tar.gz
