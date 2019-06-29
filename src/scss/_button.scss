@@ -20,35 +20,28 @@
 
 
 .landing-button {
-  display: none;
+  display: block;
 }
 
 @media screen and (max-width: $medium) {
 
   .landing-button {
+    margin: 4em auto;
+    background-color: red;
+    width: 10em;
+    height: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
-  
-    &__button {
-      display: block;
-      background-color: red;
-      width: 10rem;
-      height: 3rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: white;
-      font-family: 'Roboto', sans-serif;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-  
-    &__button:hover,
-    &__button:active {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+
+    &:hover,
+    &:active {
       background-color: darken(red, 5%);
     }
   }

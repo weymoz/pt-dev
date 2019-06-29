@@ -401,7 +401,7 @@
 .collage-rev {
   &__caption {
     text-align: center;
-    padding: .8em;
+    padding: .8em 0;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
@@ -413,9 +413,8 @@
   .collage,
   .collage-rev {
     &__caption {
+      font-size: 1.2em;
       text-align: left;
-      padding: .8em 0;
-      font-size: 1.5em;
     }
   }
 }
