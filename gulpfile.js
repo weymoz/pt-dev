@@ -10,8 +10,21 @@ const cssnano = require('cssnano');
 const sass = require("gulp-sass");
 const imagemin = require('gulp-imagemin');
 const imageminMozjpeg = require('imagemin-mozjpeg');
+const babel = require('gulp-babel');
 sass.compiler = require("node-sass");
 
+
+function js() {
+  return src('./src/js/*.js', {base: "src"})
+    .pipe(babel())
+    .pipe(dest('./peopletalk'))
+    .pipe(dest('./docs'));
+}
+
+function watchJs(cb) {
+  watch("./src/js/*.js", js);
+  cb();
+}
 
 
 function serve() {
@@ -117,9 +130,16 @@ function clean() {
 }
 
 exports.dev = 
-  series(clean, styles, html, images, copyServer, deploy,  
-    parallel(watchStyles, watchHtml, watchImages, serve, watchDeploy)
+  series(clean, js, styles, html, images, copyServer, deploy,  
+    parallel(watchStyles, watchHtml, watchJs, watchImages, serve, watchDeploy)
+  );
+
+exports.dev_loc = 
+  series(clean, js, styles, html, images,  
+    parallel(watchStyles, watchHtml, watchJs, watchImages, serve)
   );
 
 exports.dist = 
-  series(clean, styles, html, optimizeImages, copyServer, deploy, parallel(serve));
+  series(clean, styles, html, js, optimizeImages, copyServer, deploy, parallel(serve));
+
+
