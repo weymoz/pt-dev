@@ -11,12 +11,14 @@ const sass = require("gulp-sass");
 const imagemin = require('gulp-imagemin');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const babel = require('gulp-babel');
+const uglify = require('gulp-uglify');
 sass.compiler = require("node-sass");
 
 
 function js() {
   return src('./src/js/*.js', {base: "src"})
     .pipe(babel())
+    .pipe(uglify())
     .pipe(dest('./peopletalk'))
     .pipe(dest('./docs'));
 }
@@ -127,6 +129,12 @@ function watchDeploy(cb) {
 
 function clean() {
   return del(['peopletalk', 'docs']);
+}
+
+
+function dist() {
+  return src("docs/js/*.js", {base: "docs"})
+    .pipe(dest("dist"));
 }
 
 exports.dev = 

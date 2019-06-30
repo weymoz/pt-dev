@@ -1,26 +1,28 @@
-(
-  window.onload = () => {
-    const buttons = document.getElementsByClassName('landing-button')
+function toggleReadMore(evt) {
 
-    for(const button of buttons) {
-      button.addEventListener('click', function(evt) {
+  //this = current button, should be set in html
+  //like this: return toggleReadMore.call(this, event)
 
-        evt.preventDefault();
+  evt.preventDefault();
 
-        const readMoreDiv = this.previousElementSibling;
-        const nextDiv = this.nextElementSibling;
+  //get div to open/close
+  const readMoreDiv = this.previousElementSibling;
 
-        if(readMoreDiv.style.maxHeight) {
-          this.innerText = "Далее";
-          readMoreDiv.style.maxHeight = null;
-          setTimeout(() => {
-            this.scrollIntoView();
-          }, 700);
-        } else {
-          readMoreDiv.style.maxHeight = readMoreDiv.scrollHeight + "px";
-          this.innerText = "Закрыть";
-        }
-      })
-    }
+  //get the div to scroll to when closed
+  const nextDiv = this.nextElementSibling;
+
+  //if div is open ...
+  if(readMoreDiv.style.maxHeight) {
+    this.innerText = "Далее";
+    readMoreDiv.style.maxHeight = null;
+
+    //wait untill css animation allmost stopped and then scroll
+    setTimeout(this.scrollIntoView.bind(this), 500);
+  } 
+
+  //if div is closed ... 
+  else {
+    readMoreDiv.style.maxHeight = readMoreDiv.scrollHeight + "px";
+    this.innerText = "Закрыть";
   }
-)()
+} 

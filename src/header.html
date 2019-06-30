@@ -198,21 +198,7 @@ src="https://www.facebook.com/tr?id=281445466090896&ev=PageView&noscript=1" />
     <!-- landing page styles end -->
 
     <!-- landing page scripts -->
-    <script>
-      function toggleReadMore(evt) {
-        evt.preventDefault();
-        const readMoreDiv = this.previousElementSibling;
-        const nextDiv = this.nextElementSibling;
-        if(readMoreDiv.style.maxHeight) {
-          this.innerText = "Далее";
-          readMoreDiv.style.maxHeight = null;
-          setTimeout(this.scrollIntoView.bind(this), 500);
-        } else {
-          readMoreDiv.style.maxHeight = readMoreDiv.scrollHeight + "px";
-          this.innerText = "Закрыть";
-        }
-      } 
-    </script>  
+    <script src="js/read-more-toggle.js"></script>  
     <!-- landing page scripts end -->
 
 
