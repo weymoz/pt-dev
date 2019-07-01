@@ -23,197 +23,221 @@
   </div> <!-- landing header end -->
 
 
-  <section class="landing-section section-type-1 section-1">
 
-    <div class="section-type-1__picture">
-      <div class="section-type-1__bg-wrapper">
-        <img class="section-type-1__bg-image" src="img/bg.jpg" alt="">
-      </div>
-      <div class="section-type-1__image-wrapper">
-        <img class="section-type-1__image" src="img/01-trends/main.jpg" alt="">
-      </div>
-    </div>
+  <section class="section-1">
 
-    <div class="landing-section__text">
 
-      <div class="section-title">
-        <h2 class="section-title__primary">
-          <div class="section-title__number">
-            01.
-          </div>
-          <div class="section-title__text">
-            Тренды
-          </div>
-        </h2>  
-        <p class="section-title__secondary">
-        lorem ipsum dolor sit amet dfsdff wellno kj oiuytvc.
-        </p>
+    <section class="landing-section section-type-1 section-1">
+
+      <div class="section-type-1__picture">
+        <div class="section-type-1__bg-wrapper">
+          <img class="section-type-1__bg-image" src="img/bg.jpg" alt="">
+        </div>
+        <div class="section-type-1__image-wrapper">
+          <img class="section-type-1__image" src="img/01/main.jpg" alt="">
+        </div>
       </div>
 
-    </div>
+      <div class="landing-section__text">
+
+        <div class="section-title">
+          <h2 class="section-title__primary">
+            <div class="section-title__number">
+              01.
+            </div>
+            <div class="section-title__text">
+              Тренды
+            </div>
+          </h2>  
+          <p class="section-title__secondary">
+          lorem ipsum dolor sit amet dfsdff wellno kj oiuytvc.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="collage">
+
+      <figure class="collage__figure collage__figure--1">
+        <figcaption class="collage__caption">Деним</figcaption>
+        <img 
+                    class="collage__image" 
+                    src="img/01/denim.png" 
+                    alt="category image">
+      </figure>
+
+      <figure class="collage__figure collage__figure--2">
+        <figcaption class="collage__caption">Прозрачное</figcaption>
+        <img 
+                    class="collage__image" 
+                    src="img/01/prozrachnoe.png" 
+                    alt="category image">
+      </figure>
+
+      <div id="read-more" class="collage__more">
+
+        <figure class="collage__figure collage__figure--3">
+          <figcaption class="collage__caption">Нюд</figcaption>
+          <img 
+                      class="collage__image" 
+                      src="img/01/nud.jpg" 
+                      alt="category image">
+        </figure>
+
+        <figure class="collage__figure collage__figure--4">
+          <figcaption class="collage__caption">Лен</figcaption>
+          <img 
+                      class="collage__image" 
+                      src="img/01/len.jpg" 
+                      alt="category image">
+        </figure>
+
+        <figure class="collage__figure collage__figure--5">
+          <img 
+                class="collage__image" 
+                src="img/01/geltiy.jpg" 
+                alt="category image">
+          <figcaption class="collage__caption">Желтый</figcaption>
+        </figure>
+
+        <figure class="collage__figure collage__figure--6">
+          <img 
+                class="collage__image" 
+                src="img/01/beliy.jpg" 
+                alt="category image">
+          <figcaption class="collage__caption">Белый</figcaption>
+        </figure>
+
+        <figure class="collage__figure collage__figure--7">
+          <img 
+                class="collage__image" 
+                src="img/01/oversize.png" 
+                alt="category image">
+          <figcaption class="collage__caption">Оверсайз</figcaption>
+        </figure>
+
+      </div> <! --- #more .more -->
+
+      <a onclick="return toggleReadMore.call(this, event)" class="landing-button" href="">Далее</a>
+
+    </section>
+
 
   </section>
 
 
-
-  <section class="collage">
-
-    <figure class="collage__figure collage__figure--1">
-      <figcaption class="collage__caption">Деним</figcaption>
-      <img 
-                  class="collage__image" 
-                  src="img/01-trends/Деним.png" 
-                  alt="category image">
-    </figure>
-
-    <figure class="collage__figure collage__figure--2">
-      <figcaption class="collage__caption">Прозрачное</figcaption>
-      <img 
-                  class="collage__image" 
-                  src="img/01-trends/Прозрачное.png" 
-                  alt="category image">
-    </figure>
-
-    <figure class="collage__figure collage__figure--3">
-      <figcaption class="collage__caption">Нюд</figcaption>
-      <img 
-                  class="collage__image" 
-                  src="img/01-trends/Нюд.jpg" 
-                  alt="category image">
-    </figure>
-
-    <figure class="collage__figure collage__figure--4">
-      <figcaption class="collage__caption">Лен</figcaption>
-      <img 
-                  class="collage__image" 
-                  src="img/01-trends/Лён.jpg" 
-                  alt="category image">
-    </figure>
-
-    <figure class="collage__figure collage__figure--5">
-      <img 
-            class="collage__image" 
-            src="img/01-trends/Желтый.jpg" 
-            alt="category image">
-      <figcaption class="collage__caption">Желтый</figcaption>
-    </figure>
-
-    <figure class="collage__figure collage__figure--6">
-      <img 
-            class="collage__image" 
-            src="img/01-trends/Белый.jpg" 
-            alt="category image">
-      <figcaption class="collage__caption">Белый</figcaption>
-    </figure>
-
-    <figure class="collage__figure collage__figure--7">
-      <img 
-            class="collage__image" 
-            src="img/01-trends/Оверсайз.png" 
-            alt="category image">
-      <figcaption class="collage__caption">Оверсайз</figcaption>
-    </figure>
-
-  </section>
-
-  <section class="landing-button">
-    <a class="landing-button__button" href="#">Далее</a>
-  </section>
 
   <!-- section 2 -->
 
-  <section class="landing-section section-type-2 section-2">
 
-    <div class="section-type-2__picture">
-      <div class="section-type-2__bg-wrapper">
-        <img class="section-type-2__bg-image" src="img/bg.jpg" alt="">
-      </div>
-      <div class="section-type-2__image-wrapper">
-        <img class="section-type-2__image" src="img/02/main.jpg" alt="">
-      </div>
-    </div>
+  <section id="landing-section-2" class="section-2">
 
-    <div class="landing-section__text">
-      <div class="section-title">
-        <h2 class="section-title__primary">
-          <div class="section-title__number">
-            02.
-          </div>
-          <div class="section-title__text">
-            Главные предметы гардероба
-          </div>
-        </h2>  
-        <p class="section-title__secondary">
-        </p>
+
+    <section class="landing-section section-type-2 section-2">
+
+      <div class="section-type-2__picture">
+        <div class="section-type-2__bg-wrapper">
+          <img class="section-type-2__bg-image" src="img/bg.jpg" alt="">
+        </div>
+        <div class="section-type-2__image-wrapper">
+          <img class="section-type-2__image" src="img/02/main.jpg" alt="">
+        </div>
       </div>
-    </div>
+
+      <div class="landing-section__text">
+        <div class="section-title">
+          <h2 class="section-title__primary">
+            <div class="section-title__number">
+              02.
+            </div>
+            <div class="section-title__text">
+              Главные предметы гардероба
+            </div>
+          </h2>  
+          <p class="section-title__secondary">
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="collage-rev">
+
+      <figure class="collage-rev__figure collage-rev__figure--1">
+        <img 
+              class="collage-rev__image" 
+              src="img/02/rubashka-s-korotkim-rukavom.png" 
+              alt="category image">
+        <figcaption class="collage-rev__caption">Рубашка с коротким рукавом</figcaption>
+      </figure>
+
+      <figure class="collage-rev__figure collage-rev__figure--2">
+        <img 
+              class="collage-rev__image" 
+              src="img/02/platye-s-cvetochnim-printom.png" 
+              alt="category image">
+        <figcaption class="collage-rev__caption">Платье с цветочным принтом</figcaption>
+      </figure>
+
+      <div id="read-more" class="collage__more">
+
+        <figure class="collage-rev__figure collage-rev__figure--3">
+          <img 
+                class="collage-rev__image" 
+                src="img/02/kostum-s-shortami.jpg" 
+                alt="category image">
+          <figcaption class="collage-rev__caption">Костюм с шортами</figcaption>
+        </figure>
+
+
+        <figure class="collage-rev__figure collage-rev__figure--4">
+          <img 
+                class="collage-rev__image" 
+                src="img/02/shorty.jpg" 
+                alt="category image">
+          <figcaption class="collage-rev__caption">Велосипедки и шорты</figcaption>
+        </figure>
+
+        <figure class="collage-rev__figure collage-rev__figure--5">
+          <img 
+                class="collage-rev__image" 
+                src="img/02/legkiy-pidgak.jpg" 
+                alt="category image">
+          <figcaption class="collage-rev__caption">Легкий пиджак</figcaption>
+        </figure>
+
+        <figure class="collage-rev__figure collage-rev__figure--6">
+          <figcaption class="collage-rev__caption">Трикотажный топ</figcaption>
+          <img 
+                      class="collage-rev__image" 
+                      src="img/02/trikotagniy-top.png" 
+                      alt="category image">
+        </figure>
+
+        <figure class="collage-rev__figure collage-rev__figure--7">
+          <figcaption class="collage-rev__caption">Широкие брюки и джинсы из 90х</figcaption>
+          <img 
+                      class="collage-rev__image" 
+                      src="img/02/shirokie-bruki.jpg" 
+                      alt="category image">
+        </figure>
+
+      </div>
+
+      <a onclick="return toggleReadMore.call(this, event)" class="landing-button" href="">Далее</a>
+
+    </section>
+
+
 
   </section>
 
 
-  <section class="collage-rev">
-
-    <figure class="collage-rev__figure collage-rev__figure--1">
-      <img 
-            class="collage-rev__image" 
-            src="img/02/Рубашка с коротким рукавом.png" 
-            alt="category image">
-      <figcaption class="collage-rev__caption">Рубашка с коротким рукавом</figcaption>
-    </figure>
-
-    <figure class="collage-rev__figure collage-rev__figure--2">
-      <img 
-            class="collage-rev__image" 
-            src="img/02/Платье с цветочным принтом.png" 
-            alt="category image">
-      <figcaption class="collage-rev__caption">Платье с цветочным принтом</figcaption>
-    </figure>
-
-    <figure class="collage-rev__figure collage-rev__figure--3">
-      <img 
-            class="collage-rev__image" 
-            src="img/02/Костюм с шортами.jpg" 
-            alt="category image">
-      <figcaption class="collage-rev__caption">Костюм с шортами</figcaption>
-    </figure>
-
-    <figure class="collage-rev__figure collage-rev__figure--4">
-      <img 
-            class="collage-rev__image" 
-            src="img/02/Шорты.jpg" 
-            alt="category image">
-      <figcaption class="collage-rev__caption">Велосипедки и шорты</figcaption>
-    </figure>
-
-    <figure class="collage-rev__figure collage-rev__figure--5">
-      <img 
-            class="collage-rev__image" 
-            src="img/02/Легкий пиджак.jpg" 
-            alt="category image">
-      <figcaption class="collage-rev__caption">Легкий пиджак</figcaption>
-    </figure>
-
-    <figure class="collage-rev__figure collage-rev__figure--6">
-      <figcaption class="collage-rev__caption">Трикотажный топ</figcaption>
-      <img 
-                  class="collage-rev__image" 
-                  src="img/02/Трикотажный топ (американка).png" 
-                  alt="category image">
-    </figure>
-
-    <figure class="collage-rev__figure collage-rev__figure--7">
-      <figcaption class="collage-rev__caption">Широкие брюки и джинсы из 90х</figcaption>
-      <img 
-                  class="collage-rev__image" 
-                  src="img/02/Длинные брюки-клеш (широкие брюки).jpg" 
-                  alt="category image">
-    </figure>
-
-  </section>
-
-  <section class="landing-button">
-    <a class="landing-button__button" href="#">Далее</a>
-  </section>
 
 
   <!-- section 03 -->
@@ -258,7 +282,7 @@
       <figure class="collage__figure collage__figure--1">
         <img 
               class="collage__image" 
-              src="img/03/Большие очки.jpg" 
+              src="img/03/bolshie-ochki.jpg" 
               alt="category image">
         <figcaption class="collage__caption">Большие очки</figcaption>
       </figure>
@@ -267,54 +291,55 @@
         <figcaption class="collage__caption">Большие сумки</figcaption>
         <img 
                     class="collage__image" 
-                    src="img/03/Большие сумки.jpg" 
+                    src="img/03/bolshie-sumki.jpg" 
                     alt="category image">
       </figure>
 
-      <figure class="collage__figure collage__figure--3">
-        <figcaption class="collage__caption">Заколки</figcaption>
-        <img 
-                    class="collage__image" 
-                    src="img/03/Заколки (1).jpg" 
-                    alt="category image">
-      </figure>
+      <div id="read-more" class="collage__more">
 
-      <figure class="collage__figure collage__figure--4">
-        <figcaption class="collage__caption">Моносерьга</figcaption>
-        <img 
-                    class="collage__image" 
-                    src="img/03/Моносерьга.jpg" 
-                    alt="category image">
-      </figure>
+        <figure class="collage__figure collage__figure--3">
+          <figcaption class="collage__caption">Заколки</figcaption>
+          <img 
+                      class="collage__image" 
+                      src="img/03/zakolki.jpg" 
+                      alt="category image">
+        </figure>
 
-      <figure class="collage__figure collage__figure--5">
-        <img 
-              class="collage__image" 
-              src="img/03/Широкий ремень.jpg" 
-              alt="category image">
-        <figcaption class="collage__caption">Широкий ремень</figcaption>
-      </figure>
+        <figure class="collage__figure collage__figure--4">
+          <figcaption class="collage__caption">Моносерьга</figcaption>
+          <img 
+                      class="collage__image" 
+                      src="img/03/monoserga.jpg" 
+                      alt="category image">
+        </figure>
 
-      <figure class="collage__figure collage__figure--6">
-        <figcaption class="collage__caption">Золотые украшения</figcaption>
-        <img 
-                    class="collage__image" 
-                    src="img/03/Золотые украшения.jpg" 
-                    alt="category image">
-      </figure>
+        <figure class="collage__figure collage__figure--5">
+          <img 
+                class="collage__image" 
+                src="img/03/shirokiy-remen.jpg" 
+                alt="category image">
+          <figcaption class="collage__caption">Широкий ремень</figcaption>
+        </figure>
 
-      <figure class="collage__figure collage__figure--7">
-        <img 
-              class="collage__image" 
-              src="img/03/Панама (1).jpg" 
-              alt="category image">
-        <figcaption class="collage__caption">Панамы и бейсболки</figcaption>
-      </figure>
+        <figure class="collage__figure collage__figure--6">
+          <figcaption class="collage__caption">Золотые украшения</figcaption>
+          <img 
+                      class="collage__image" 
+                      src="img/03/zolotie-ukrasheniya.jpg" 
+                      alt="category image">
+        </figure>
 
-    </section>
+        <figure class="collage__figure collage__figure--7">
+          <img 
+                class="collage__image" 
+                src="img/03/panama.jpg" 
+                alt="category image">
+          <figcaption class="collage__caption">Панамы и бейсболки</figcaption>
+        </figure>
+      </div>
 
-    <section class="landing-button">
-      <a class="landing-button__button" href="#">Далее</a>
+      <a onclick="return toggleReadMore.call(this, event)" class="landing-button" href="">Далее</a>
+
     </section>
 
   </section>
@@ -358,7 +383,7 @@
       <figure class="collage-rev__figure collage-rev__figure--1">
         <img 
               class="collage-rev__image" 
-              src="img/04/Сандалии.jpg" 
+              src="img/04/sandali.jpg" 
               alt="category image">
         <figcaption class="collage-rev__caption">Сандалии</figcaption>
       </figure>
@@ -366,56 +391,58 @@
       <figure style="display: none" class="collage-rev__figure collage-rev__figure--2">
         <img 
                                     class="collage-rev__image" 
-                                    src="img/02/Платье с цветочным принтом.png" 
+                                    src="img/04/sandali.jpg" 
                                     alt="category image">
         <figcaption class="collage-rev__caption">Платье с цветочным принтом</figcaption>
       </figure>
 
-      <figure class="collage-rev__figure collage-rev__figure--3">
+
+      <figure class="collage-rev__figure collage-rev__figure--2">
         <img 
               class="collage-rev__image" 
-              src="img/04/Вьетнамки.jpg" 
+              src="img/04/vyetnamki.jpg" 
               alt="category image">
         <figcaption class="collage-rev__caption">Вьетнамки</figcaption>
       </figure>
 
-      <figure class="collage-rev__figure collage-rev__figure--4">
-        <img 
-              class="collage-rev__image" 
-              src="img/04/Модные кроссовки.PNG" 
-              alt="category image">
-        <figcaption class="collage-rev__caption">Модные кроссовки</figcaption>
-      </figure>
+      <div id="read-more" class="collage__more">
 
-      <figure class="collage-rev__figure collage-rev__figure--5">
-        <img 
-              class="collage-rev__image" 
-              src="img/04/Мюли.jpg" 
-              alt="category image">
-        <figcaption class="collage-rev__caption">Мюли</figcaption>
-      </figure>
+        <figure class="collage-rev__figure collage-rev__figure--3">
+          <img 
+                class="collage-rev__image" 
+                src="img/04/modniye-krossovki.png" 
+                alt="category image">
+          <figcaption class="collage-rev__caption">Модные кроссовки</figcaption>
+        </figure>
 
-      <figure class="collage-rev__figure collage-rev__figure--6">
-        <figcaption class="collage-rev__caption">Босоножки на каблуке.jpg</figcaption>
-        <img 
-                    class="collage-rev__image" 
-                    src="img/04/Босоножки на каблуке.jpg" 
-                    alt="category image">
-      </figure>
+        <figure class="collage-rev__figure collage-rev__figure--4">
+          <img 
+                class="collage-rev__image" 
+                src="img/04/muli.jpg" 
+                alt="category image">
+          <figcaption class="collage-rev__caption">Мюли</figcaption>
+        </figure>
 
-      <figure class="collage-rev__figure collage-rev__figure--7">
-        <figcaption class="collage-rev__caption">Бэкслинги</figcaption>
-        <img 
-                    class="collage-rev__image" 
-                    src="img/04/Бэкслинги.jpg" 
-                    alt="category image">
-      </figure>
+        <figure class="collage-rev__figure collage-rev__figure--5">
+          <figcaption class="collage-rev__caption">Босоножки на каблуке</figcaption>
+          <img 
+                      class="collage-rev__image" 
+                      src="img/04/bosonogki-na-kabluke.jpg" 
+                      alt="category image">
+        </figure>
+
+        <figure class="collage-rev__figure collage-rev__figure--6">
+          <figcaption class="collage-rev__caption">Бэкслинги</figcaption>
+          <img 
+                      class="collage-rev__image" 
+                      src="img/04/bekslingi.jpg" 
+                      alt="category image">
+        </figure>
+      </div>
+      <a onclick="return toggleReadMore.call(this, event)" class="landing-button" href="">Далее</a>
 
     </section>
 
-  </section>
-  <section class="landing-button">
-    <a class="landing-button__button" href="#">Далее</a>
   </section>
 
 
@@ -460,7 +487,7 @@
         <figcaption class="collage__caption">Звезды</figcaption>
         <img 
                     class="collage__image" 
-                    src="img/05/Звезды .JPG" 
+                    src="img/05/zvezdy.jpg" 
                     alt="category image">
       </figure>
 
@@ -468,62 +495,63 @@
         <figcaption class="collage__caption">Образы</figcaption>
         <img 
                     class="collage__image" 
-                    src="img/05/Образы.JPG" 
+                    src="img/05/obrazy.jpg" 
                     alt="category image">
       </figure>
 
-      <figure class="collage__figure collage__figure--3">
-        <figcaption class="collage__caption">Инста-блогеры</figcaption>
-        <img 
-                    class="collage__image" 
-                    src="img/05/Инста-блогеры .PNG" 
-                    alt="category image">
-      </figure>
+      <div id="read-more" class="collage__more">
 
-      <figure class="collage__figure collage__figure--4">
-        <img 
-              class="collage__image" 
-              src="img/05/Стритстайл.PNG" 
-              alt="category image">
-        <figcaption class="collage__caption">Стритстайл</figcaption>
-      </figure>
+        <figure class="collage__figure collage__figure--3">
+          <figcaption class="collage__caption">Инста-блогеры</figcaption>
+          <img 
+                      class="collage__image" 
+                      src="img/05/insta-blogery.png" 
+                      alt="category image">
+        </figure>
 
+        <figure class="collage__figure collage__figure--4">
+          <img 
+                class="collage__image" 
+                src="img/05/stritstail.png" 
+                alt="category image">
+          <figcaption class="collage__caption">Стритстайл</figcaption>
+        </figure>
+
+      </div>
+
+      <a onclick="return toggleReadMore.call(this, event)" class="landing-button" href="">Далее</a>
 
     </section>
 
   </section>
 
-
-
-  <section class="landing-button">
-    <a class="landing-button__button" href="#">Далее</a>
-  </section>
-
-
-
 </div>
 
 
 
-<form class="form subscribe-popup__input-form subscribe-popup__input-form--bottom  js__subscribe landing-form">
 
-  <h4 class="subscribe-popup__subtitle subscribe-popup__subtitle--bottom">Подпишись на рассылку</h4>
+  <form class="form subscribe-popup__input-form subscribe-popup__input-form--bottom  js__subscribe landing-form">
 
-  <div class="subscribe-popup__fieldset-wrapper">
-    <fieldset class="form__fieldset">
-      <label><input class="subscribe__field" type="text" placeholder="email адрес" name="email-subscribe"></label>
-      <div class="form__fieldset-terms js-terms">
-        <input id="input-popup-terms-1" class="js-termsInput" type="checkbox">
-        <label for="input-popup-terms-1">Я принимаю</label>
-        <a href="https://peopletalk.ru/files_new/privacy.pdf" target="_blank">пользовательское соглашение</a>
-      </div>
-      <div class="tooltip">
-        <div class="tooltip-arrow"></div>
-        <div class="tooltip-inner">Подтверди согласие</div>
-      </div>
-    </fieldset>
-    <input type="hidden" name="action" value="add_subscriber">
-    <input type="hidden" id="_wpnonce" name="_wpnonce" value="5d65163421"><input type="hidden" name="_wp_http_referer" value="/">
-    <button class="button js__subscribe--send" type="submit">ПОДПИСАТЬСЯ</button>
-  </div>
-</form>
+    <h4 class="subscribe-popup__subtitle subscribe-popup__subtitle--bottom">Подпишись на peopletalk</h4>
+    <p class="subscribe-popup__secondary-text--bottom">
+      И получай подборку самых интересных новостей из жизни звезд 
+    </p>
+
+    <div class="subscribe-popup__fieldset-wrapper">
+      <fieldset class="form__fieldset">
+        <label><input class="subscribe__field" type="text" placeholder="email адрес" name="email-subscribe"></label>
+        <div class="form__fieldset-terms js-terms">
+          <input id="input-popup-terms-1" class="js-termsInput" type="checkbox">
+          <label for="input-popup-terms-1">Я принимаю</label>
+          <a href="https://peopletalk.ru/files_new/privacy.pdf" target="_blank">пользовательское соглашение</a>
+        </div>
+        <div class="tooltip">
+          <div class="tooltip-arrow"></div>
+          <div class="tooltip-inner">Подтверди согласие</div>
+        </div>
+      </fieldset>
+      <input type="hidden" name="action" value="add_subscriber">
+      <input type="hidden" id="_wpnonce" name="_wpnonce" value="5d65163421"><input type="hidden" name="_wp_http_referer" value="/">
+      <button class="button js__subscribe--send" type="submit">ПОДПИСАТЬСЯ</button>
+    </div>
+  </form>

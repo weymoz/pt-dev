@@ -12,14 +12,18 @@ const imagemin = require('gulp-imagemin');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
+const rename = require('gulp-rename');
 sass.compiler = require("node-sass");
 
 
 function js() {
   return src('./src/js/*.js', {base: "src"})
     .pipe(babel())
+    .pipe(dest("dist"))
     .pipe(uglify())
+    .pipe(rename({extname: ".min.js"}))
     .pipe(dest('./peopletalk'))
+    .pipe(dest("dist"))
     .pipe(dest('./docs'));
 }
 
@@ -42,7 +46,9 @@ function serve() {
 
 function html() {
   return src([
-    './src/header.html', 
+    './src/header-top.html', 
+    './src/css-js-includes.html', 
+    './src/header-bottom.html', 
     './src/content.html', 
     './src/form.html', 
     './src/footer.html'])
@@ -57,17 +63,38 @@ function watchHtml(cb) {
 }
 
 
+function htmlToDist() {
+  return src([
+    'src/content.html',
+    'src/form.html',
+  ])
+  .pipe(concat('landing.html'))
+  .pipe(dest('dist'))
+}
+
+function cssJsIncludesToDist() {
+  return src([
+    'src/css-js-includes.html',
+  ])
+  .pipe(dest('dist'))
+}
+
 function styles() {
   return src("src/scss/*.*")
     .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([
       autoprefixer(),
+    ]))
+    .pipe(dest('dist'))
+    .pipe(postcss([
       cssnano()
     ]))
     .pipe(sourcemaps.write())
+    .pipe(rename({extname: ".min.css"}))
     .pipe(dest("docs"))
     .pipe(browserSync.stream())
+    .pipe(dest('dist'))
     .pipe(dest('peopletalk'));
 }
 
@@ -90,6 +117,7 @@ function optimizeImages() {
     ], {verbose: true}))
     .pipe(imagemin(imageminMozjpeg({quality: 50})))
     .pipe(dest("docs"))
+    .pipe(dest("dist"))
     .pipe(dest("peopletalk"));
 }
 
@@ -128,14 +156,14 @@ function watchDeploy(cb) {
 }
 
 function clean() {
-  return del(['peopletalk', 'docs']);
+  return del(['peopletalk', 'docs', 'dist']);
 }
 
-
-function dist() {
-  return src("docs/js/*.js", {base: "docs"})
-    .pipe(dest("dist"));
+function copySite() {
+  return src("docs/**/*.*", {base: "docs"})
+    .pipe(dest("dist/site"));
 }
+
 
 exports.dev = 
   series(clean, js, styles, html, images, copyServer, deploy,  
@@ -148,6 +176,6 @@ exports.dev_loc =
   );
 
 exports.dist = 
-  series(clean, styles, html, js, optimizeImages, copyServer, deploy, parallel(serve));
+  series(clean, styles, html, js, htmlToDist, cssJsIncludesToDist, optimizeImages, copySite, copyServer, deploy, parallel(serve));
 
-
+exports.copySite = series(copySite);

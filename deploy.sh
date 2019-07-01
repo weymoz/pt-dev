@@ -1,6 +1,6 @@
 tar czf peopletalk.tar.gz peopletalk/index.html \
   peopletalk/index.js \
-  peopletalk/main.css \
+  peopletalk/main.min.css \
   peopletalk/package.json \
   peopletalk/img \
   peopletalk/js
