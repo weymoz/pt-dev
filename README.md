@@ -1,4 +1,4 @@
-[Демо страница лендинга](https://weymoz.github.io/pt-dev)
+[Демо страница лендинга](https://peopletalk.ru/article/vse-o-mode-etim-letom/)
 
 В папке **dist** лежат все необходимые файлы.
 
